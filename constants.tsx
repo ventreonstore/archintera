@@ -10,13 +10,6 @@ export const PROJECTS: Project[] = [
     imageUrl: '/images/commercial_mixed_use_01.png'
   },
   {
-    id: '2',
-    title: 'Obsidian Night Tower',
-    location: 'Singapore',
-    category: 'Commercial Developments',
-    imageUrl: '/images/commercial_tower_01.png'
-  },
-  {
     id: '3',
     title: 'Sunset Infinity Residences',
     location: 'Mumbai, India',
@@ -36,13 +29,6 @@ export const PROJECTS: Project[] = [
     location: 'Ibiza, Spain',
     category: 'Luxury Residential',
     imageUrl: '/images/luxury_villa_exterior_01.png'
-  },
-  {
-    id: '6',
-    title: 'The Stone House',
-    location: 'Mykonos, Greece',
-    category: 'Luxury Residential',
-    imageUrl: '/images/luxury_villa_facade_01.png'
   },
   {
     id: '7',

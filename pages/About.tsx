@@ -12,7 +12,7 @@ const About: React.FC = () => {
         </div>
         <h1 className="text-6xl md:text-9xl font-black tracking-tighter leading-none uppercase mb-16 italic">
           Boutique <br />
-          <span className="text-transparent stroke-white" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.4)' }}>Visualization</span> <br />
+          Visualization <br />
           Solutions
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-24 items-start">
@@ -31,11 +31,23 @@ const About: React.FC = () => {
             <div className="bg-white/5 p-12 border border-white/5 hover:border-[#d4ff00]/30 transition-all">
               <Target className="text-[#d4ff00] mb-6" size={40} />
               <p className="text-[#d4ff00] font-bold text-xs uppercase tracking-[0.3em] mb-4">Mission</p>
-              <ul className="space-y-6 text-lg text-gray-300 font-light">
-                <li className="flex gap-4"><span>•</span> Deliver high-quality, realistic architectural visuals</li>
-                <li className="flex gap-4"><span>•</span> Provide fast and reliable project turnaround</li>
-                <li className="flex gap-4"><span>•</span> Maintain strong attention to detail and accuracy</li>
-                <li className="flex gap-4"><span>•</span> Build long-term partnerships remembering client requirements</li>
+              <ul className="space-y-6 text-lg text-gray-300 font-light pl-0">
+                <li className="flex items-start gap-4">
+                  <span className="text-[#d4ff00] mt-1 text-2xl leading-none">•</span> 
+                  <span className="leading-relaxed">Deliver high-quality, realistic architectural visuals</span>
+                </li>
+                <li className="flex items-start gap-4">
+                  <span className="text-[#d4ff00] mt-1 text-2xl leading-none">•</span> 
+                  <span className="leading-relaxed">Provide fast and reliable project turnaround</span>
+                </li>
+                <li className="flex items-start gap-4">
+                  <span className="text-[#d4ff00] mt-1 text-2xl leading-none">•</span> 
+                  <span className="leading-relaxed">Maintain strong attention to detail and accuracy</span>
+                </li>
+                <li className="flex items-start gap-4">
+                  <span className="text-[#d4ff00] mt-1 text-2xl leading-none">•</span> 
+                  <span className="leading-relaxed">Build long-term partnerships remembering client requirements</span>
+                </li>
               </ul>
             </div>
           </div>

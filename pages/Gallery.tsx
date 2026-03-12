@@ -20,75 +20,73 @@ const Gallery: React.FC = () => {
 
   // Data representing the 9 UNIQUE architectural visualization images (no overlap with Works)
   const items: GalleryItem[] = [
-    // === ROW 1: Interior Focus ===
+    // === ROW 1: Massive Hero & Vertical ===
     { 
       id: 1, 
       src: '/images/kitchen_interior_01.png', 
       title: 'Monolith Kitchen — Bespoke Culinary Space', 
       category: 'Interior Visualization',
-      span: 'md:col-span-8 md:row-span-2' // HERO — largest item
+      span: 'md:col-span-12 md:row-span-2' // HERO
     },
     { 
       id: 2, 
       src: '/images/dining_interior_01.png', 
       title: 'Amber Dining Atelier', 
       category: 'Interior Visualization',
-      span: 'md:col-span-4 md:row-span-1'
+      span: 'md:col-span-6 md:row-span-2'
     },
     { 
-      id: 3, 
-      src: '/images/luxury_villa_dusk_01.png', 
-      title: 'Dusk Pavilion Residence', 
-      category: 'Luxury Residential',
-      span: 'md:col-span-4 md:row-span-1'
+      id: 6, 
+      src: '/images/luxury_balcony_view_01.png', 
+      title: 'Horizon Terrace — Private Balcony Suite', 
+      category: 'Interior Visualization',
+      span: 'md:col-span-6 md:row-span-2'
     },
 
-    // === ROW 2: Hospitality & Commercial ===
+    // === ROW 2: Mixed Commercial & Hospitality ===
+    { 
+      id: 7, 
+      src: '/images/large_scale_residential_02.png', 
+      title: 'Parkview Grand — Urban Masterplan', 
+      category: 'Commercial Developments',
+      span: 'md:col-span-12 md:row-span-2' // SECOND HERO
+    },
     { 
       id: 4, 
       src: '/images/luxury_resort_aerial_01.png', 
       title: 'Elysian Heights — Skyline Villas', 
       category: 'Hospitality Architecture',
-      span: 'md:col-span-6 md:row-span-1'
+      span: 'md:col-span-6 md:row-span-2'
     },
     { 
       id: 5, 
       src: '/images/luxury_resort_aerial_02.png', 
       title: 'Canopy Crest — Aerial Masterplan', 
       category: 'Commercial Developments',
-      span: 'md:col-span-6 md:row-span-1'
+      span: 'md:col-span-6 md:row-span-2'
     },
 
-    // === ROW 3: Balcony & Masterplan ===
+    // === ROW 3: Exterior & Atmosphere ===
     { 
-      id: 6, 
-      src: '/images/luxury_balcony_view_01.png', 
-      title: 'Horizon Terrace — Private Balcony Suite', 
-      category: 'Interior Visualization',
-      span: 'md:col-span-4 md:row-span-2' // TALL vertical accent
+      id: 3, 
+      src: '/images/luxury_villa_dusk_01.png', 
+      title: 'Dusk Pavilion Residence', 
+      category: 'Luxury Residential',
+      span: 'md:col-span-12 md:row-span-2' // THIRD HERO
     },
-    { 
-      id: 7, 
-      src: '/images/large_scale_residential_02.png', 
-      title: 'Parkview Grand — Urban Masterplan', 
-      category: 'Commercial Developments',
-      span: 'md:col-span-8 md:row-span-2' // HERO — second large item
-    },
-    
-    // === ROW 4: Commercial & Hospitality Finishes ===
     { 
       id: 8, 
       src: '/images/hero_vertex_hq.jpg', 
       title: 'Vertex HQ — Twilight Perspective', 
       category: 'Commercial Developments',
-      span: 'md:col-span-6 md:row-span-1'
+      span: 'md:col-span-6 md:row-span-2'
     },
     { 
       id: 9, 
       src: '/images/luxury_resort_bar_01.png', 
       title: 'The Onyx Lounge — Sky Bar', 
       category: 'Hospitality Architecture',
-      span: 'md:col-span-6 md:row-span-1'
+      span: 'md:col-span-6 md:row-span-2'
     }
   ];
 
@@ -105,8 +103,8 @@ const Gallery: React.FC = () => {
               Visual Archive
             </span>
           </div>
-          <h1 className="text-7xl md:text-[10vw] font-black uppercase italic tracking-tighter leading-none mb-12">
-            The <span className="text-outline">Gallery</span>
+          <h1 className="text-7xl md:text-[10vw] font-black uppercase italic tracking-tighter leading-none mb-12 text-white">
+            The Gallery
           </h1>
           
           {/* Navigation Category Filter */}

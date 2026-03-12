@@ -4,27 +4,23 @@ import { PROJECTS } from '../constants';
 import ProjectCard from '../components/ProjectCard';
 import Lightbox from '../components/Lightbox';
 
-// Define grid span patterns for hierarchical layout
+// Define grid span patterns for hierarchical layout consisting of 6 massive images
 const GRID_SPANS = [
-  'md:col-span-8 md:row-span-2',  // 1: HERO — largest
-  'md:col-span-4 md:row-span-1',  // 2: sidebar top
-  'md:col-span-4 md:row-span-1',  // 3: sidebar bottom
-  'md:col-span-6 md:row-span-1',  // 4: half
-  'md:col-span-6 md:row-span-1',  // 5: half
-  'md:col-span-4 md:row-span-1',  // 6: third
-  'md:col-span-4 md:row-span-1',  // 7: third
-  'md:col-span-4 md:row-span-1',  // 8: third
+  'md:col-span-12 md:row-span-2', // Epic wide hero
+  'md:col-span-6 md:row-span-2',  // Large half
+  'md:col-span-6 md:row-span-2',  // Large half
+  'md:col-span-12 md:row-span-2', // Epic wide hero
+  'md:col-span-6 md:row-span-2',  // Large half
+  'md:col-span-6 md:row-span-2',  // Large half
 ];
 
 const ASPECT_RATIOS = [
-  'aspect-[16/10]',  // hero wide
-  'aspect-[4/3]',    // sidebar
-  'aspect-[4/3]',    // sidebar
-  'aspect-[16/10]',  // half
-  'aspect-[16/10]',  // half
-  'aspect-[4/5]',    // third tall
-  'aspect-[4/5]',    // third tall
-  'aspect-[4/5]',    // third tall
+  'aspect-[16/7]',  // Wide cinematic
+  'aspect-[4/3]',   // Standard large
+  'aspect-[4/3]',   // Standard large
+  'aspect-[16/7]',  // Wide cinematic
+  'aspect-[4/3]',   // Standard large
+  'aspect-[4/3]',   // Standard large
 ];
 
 const Portfolio: React.FC = () => {
@@ -48,8 +44,8 @@ const Portfolio: React.FC = () => {
       <section className="max-w-[1600px] mx-auto px-6 md:px-16 py-24">
         <div className="mb-24">
            <span className="text-[#d4ff00] font-black text-xs uppercase tracking-[0.6em] mb-6 block">Case Studies</span>
-           <h1 className="text-7xl md:text-[10vw] font-black uppercase italic tracking-tighter leading-none mb-12">
-             Selected <br /> <span className="text-outline">Commissions</span>
+           <h1 className="text-7xl md:text-[10vw] font-black uppercase italic tracking-tighter leading-none mb-12 text-white">
+             Selected <br /> Commissions
            </h1>
            
            <div className="flex flex-wrap gap-12 pt-12 border-t border-white/5">

@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
             <a href="#" className="hover:text-white">Privacy</a>
             <a href="#" className="hover:text-white">Terms</a>
             <a href="#" className="hover:text-[#d4ff00]">Behance</a>
-            <a href="#" className="hover:text-[#d4ff00]">Instagram</a>
+            <a href="https://www.instagram.com/archintera.renders?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="hover:text-[#d4ff00]">Instagram</a>
           </div>
         </div>
       </div>

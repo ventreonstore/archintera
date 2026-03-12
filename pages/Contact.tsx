@@ -9,7 +9,7 @@ const Contact: React.FC = () => {
       <section className="px-6 md:px-12 max-w-[1400px] mx-auto py-24">
         <h1 className="text-4xl sm:text-5xl md:text-8xl lg:text-9xl font-black tracking-tighter leading-tight uppercase mb-24 italic break-words">
           Start Your <br />
-          <span className="text-transparent stroke-white" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.4)' }}>Visualization</span>
+          Visualization
         </h1>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-32">
@@ -86,7 +86,7 @@ const Contact: React.FC = () => {
             </div>
 
             <div className="pt-12 flex gap-8">
-              <a href="#" className="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center hover:border-[#d4ff00] hover:text-[#d4ff00] transition-all">
+              <a href="https://www.instagram.com/archintera.renders?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center hover:border-[#d4ff00] hover:text-[#d4ff00] transition-all">
                 <Instagram />
               </a>
               <a href="#" className="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center hover:border-[#d4ff00] hover:text-[#d4ff00] transition-all">

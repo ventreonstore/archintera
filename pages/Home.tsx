@@ -51,48 +51,48 @@ const Home: React.FC = () => {
       </div>
 
       {/* HERO: Cinematic Atmospheric Layering */}
-      <section className="relative h-screen flex flex-col justify-center items-center overflow-hidden">
+      <section className="relative h-[100svh] min-h-[600px] flex flex-col justify-center items-center overflow-hidden pb-12">
         {/* Background Visual */}
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-black/40 z-10" />
           <img 
-            src="/images/hero_vertex_hq.jpg" 
-            className={`w-full h-full object-cover transition-all duration-[12s] ease-out ${
+            src="/images/commercial_mixed_use_01.png" 
+            className={`w-full h-full object-cover object-[center_30%] transition-all duration-[12s] ease-out ${
               revealHero ? 'scale-100 grayscale-0 brightness-75' : 'scale-125 grayscale brightness-50'
             }`}
             alt="Vertex HQ - Modern Mixed-Use Commercial Development"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-black/60" />
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 w-full max-w-[1600px] mx-auto px-6 md:px-16 text-center">
+        <div className="relative z-10 w-full max-w-[1600px] mx-auto px-6 md:px-16 text-center mt-12">
           <div className="overflow-hidden mb-8">
             <p className={`text-[#d4ff00] text-xs md:text-sm font-black uppercase tracking-[0.8em] transition-all duration-1000 delay-500 ${revealHero ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'}`}>
               Cinematic Architectural Visualization
             </p>
           </div>
 
-          <h1 className="text-6xl md:text-[12vw] lg:text-[10vw] font-black leading-[0.85] tracking-tighter uppercase italic text-white mb-16">
+          <h1 className="text-[12vw] md:text-[8vw] lg:text-[7vw] font-black leading-[0.85] tracking-tighter uppercase italic text-white mb-16">
             <div className="overflow-hidden">
               <span className={`block transition-transform duration-[1.5s] cubic-bezier(0.19, 1, 0.22, 1) delay-700 ${revealHero ? 'translate-y-0' : 'translate-y-full'}`}>
                 Architecting
               </span>
             </div>
             <div className="overflow-hidden">
-              <span className={`block text-outline transition-transform duration-[1.5s] cubic-bezier(0.19, 1, 0.22, 1) delay-900 ${revealHero ? 'translate-y-0' : 'translate-y-full'}`}>
+              <span className={`block transition-transform duration-[1.5s] cubic-bezier(0.19, 1, 0.22, 1) delay-900 ${revealHero ? 'translate-y-0' : 'translate-y-full'}`}>
                 Visual Logic
               </span>
             </div>
           </h1>
 
           <div className={`flex flex-col md:flex-row justify-center items-center gap-12 transition-all duration-1000 delay-[1.2s] ${revealHero ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`}>
-            <p className="text-gray-400 text-lg md:text-xl max-w-xl font-medium leading-relaxed uppercase tracking-wide">
+            <p className="text-gray-400 text-base md:text-lg max-w-xl font-medium leading-relaxed uppercase tracking-wide">
               We translate architectural concepts into emotionally resonant, marketing-ready visual presentations.
             </p>
             <Link 
               to="/portfolio" 
-              className="group bg-[#d4ff00] text-black px-12 py-7 font-black uppercase tracking-[0.4em] text-sm overflow-hidden relative"
+              className="group bg-[#d4ff00] text-black px-10 py-5 font-black uppercase tracking-[0.4em] text-xs md:text-sm overflow-hidden relative"
             >
               <span className="relative z-10 flex items-center gap-4">
                 Explore Work <ArrowUpRight size={20} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
@@ -103,7 +103,7 @@ const Home: React.FC = () => {
         </div>
 
         {/* Side Progress Bar Indicator */}
-        <div className="absolute right-12 top-1/2 -translate-y-1/2 h-64 w-[1px] bg-white/10 hidden lg:block">
+        <div className="absolute right-12 top-1/2 -translate-y-1/2 h-64 w-[1px] bg-white/10 hidden lg:block z-20">
           <div 
             className="w-full bg-[#d4ff00] transition-all duration-100" 
             style={{ height: `${scrollProgress * 100}%` }} 
@@ -111,9 +111,9 @@ const Home: React.FC = () => {
         </div>
 
         {/* Scroll Hint */}
-        <div className={`absolute bottom-16 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 transition-all duration-1000 delay-[2s] ${revealHero ? 'opacity-50' : 'opacity-0'}`}>
-           <span className="text-[10px] font-black uppercase tracking-[0.5em] text-white">Scroll</span>
-           <div className="w-[1px] h-16 bg-gradient-to-b from-[#d4ff00] to-transparent animate-bounce" />
+        <div className={`absolute bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 transition-all duration-1000 delay-[2s] z-20 ${revealHero ? 'opacity-70' : 'opacity-0'}`}>
+           <span className="text-[9px] font-black uppercase tracking-[0.4em] text-white">Scroll</span>
+           <div className="w-[1px] h-10 md:h-16 bg-gradient-to-b from-[#d4ff00] to-transparent animate-bounce" />
         </div>
       </section>
 
@@ -123,8 +123,8 @@ const Home: React.FC = () => {
           <div className="lg:col-span-5 space-y-16">
             <div className="space-y-6">
               <span className="text-[#d4ff00] font-black text-xs uppercase tracking-[0.6em] block">Our Mission</span>
-              <h2 className="text-6xl md:text-8xl font-black uppercase italic tracking-tighter leading-[0.9]">
-                Clarity <br /> Through <br /> <span className="text-outline">Detail</span>
+              <h2 className="text-5xl lg:text-7xl xl:text-[5.5rem] font-black uppercase italic tracking-tighter leading-[0.9] relative z-20">
+                Clarity <br /> Through <br /> Detail
               </h2>
             </div>
             <p className="text-2xl text-gray-400 font-light leading-relaxed">
@@ -164,9 +164,9 @@ const Home: React.FC = () => {
       {/* SERVICES: INTERACTIVE GRID */}
       <section className="py-64 bg-[#050505] border-y border-white/5">
         <div className="max-w-[1600px] mx-auto px-6 md:px-16">
-          <div className="flex flex-col md:flex-row justify-between items-end gap-12 mb-32 border-b border-white/10 pb-16">
-            <h2 className="text-7xl md:text-9xl font-black uppercase tracking-tighter italic">Expertise</h2>
-            <p className="text-gray-500 max-w-sm text-sm uppercase font-bold tracking-[0.4em] leading-loose text-right">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-12 mb-32 border-b border-white/10 pb-16 flex-wrap lg:flex-nowrap">
+            <h2 className="text-7xl md:text-9xl font-black uppercase tracking-tighter italic w-full lg:w-auto">Expertise</h2>
+            <p className="text-gray-500 max-w-[300px] md:max-w-md w-full text-sm uppercase font-bold tracking-[0.4em] leading-loose text-left md:text-right flex-shrink-0 mt-4 md:mt-0">
               Cinematic visual storytelling formats.
             </p>
           </div>
@@ -195,22 +195,24 @@ const Home: React.FC = () => {
       {/* PROCESS: VERTICAL SCROLL EXPERIENCE */}
       <section className="py-64 bg-[#050505]">
         <div className="max-w-[1600px] mx-auto px-6 md:px-16">
-          <h2 className="text-5xl md:text-[10vw] font-black uppercase tracking-tighter italic mb-48 text-center text-outline">Workflow</h2>
+          <h2 className="text-5xl md:text-[10vw] font-black uppercase tracking-tighter italic mb-32 md:mb-48 text-center text-white">Workflow</h2>
           
-          <div className="space-y-32">
+          <div className="space-y-24 md:space-y-32">
             {[
               { id: '01', title: 'Architectural Vision', d: 'CAD drawings review and conceptual aesthetic understanding to establish the visual language.' },
               { id: '02', title: 'Spatial Construction', d: 'High-precision modeling and strategic camera framing to maximize architectural impact.' },
               { id: '03', title: 'Cinematic Mood', d: 'Applying advanced lighting logic and environmental storytelling to create emotional resonance.' },
               { id: '04', title: 'Master Presentation', d: 'Final marketing-ready visual assets delivered to propel real estate or design communication.' }
             ].map((step, idx) => (
-              <div key={idx} className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center group">
-                <div className="lg:col-span-2 text-7xl font-black text-white/5 group-hover:text-[#d4ff00] transition-colors duration-700">{step.id}</div>
-                <div className="lg:col-span-4">
-                  <h4 className="text-4xl font-black uppercase italic tracking-tighter">{step.title}</h4>
+              <div key={idx} className="flex flex-col md:flex-row gap-8 md:gap-16 items-start md:items-center group border-t border-white/5 pt-12 md:pt-16">
+                <div className="text-7xl font-black text-white/5 group-hover:text-[#d4ff00] transition-colors duration-700 flex-shrink-0 w-24">
+                  {step.id}
                 </div>
-                <div className="lg:col-span-6">
-                  <p className="text-xl text-gray-500 group-hover:text-white transition-colors duration-700 leading-relaxed font-light">
+                <div className="flex-shrink-0 w-full md:w-[350px] lg:w-[450px]">
+                  <h4 className="text-3xl md:text-4xl font-black uppercase italic tracking-tighter leading-[1.1]">{step.title}</h4>
+                </div>
+                <div className="md:border-l md:border-white/10 md:pl-16 w-full max-w-2xl">
+                  <p className="text-lg md:text-xl text-gray-500 group-hover:text-white transition-colors duration-700 leading-relaxed font-light">
                     {step.d}
                   </p>
                 </div>
@@ -223,10 +225,10 @@ const Home: React.FC = () => {
       {/* FINAL CTA: CINEMATIC MARQUEE */}
       <section className="py-80 bg-black flex flex-col items-center justify-center text-center overflow-hidden">
         <div className="w-full flex whitespace-nowrap overflow-hidden mb-12 select-none pointer-events-none opacity-20">
-          <div className="animate-marquee inline-block text-[15vw] font-black uppercase tracking-tighter text-outline">
+          <div className="animate-marquee inline-block text-[15vw] font-black uppercase tracking-tighter text-white">
             ARCHINTERA STUDIO VISUALIZATION MASTERCLASS ARCHINTERA STUDIO —&nbsp;
           </div>
-          <div className="animate-marquee inline-block text-[15vw] font-black uppercase tracking-tighter text-outline">
+          <div className="animate-marquee inline-block text-[15vw] font-black uppercase tracking-tighter text-white">
             ARCHINTERA STUDIO VISUALIZATION MASTERCLASS ARCHINTERA STUDIO —&nbsp;
           </div>
         </div>
@@ -253,10 +255,6 @@ const Home: React.FC = () => {
         .animate-marquee {
           display: inline-block;
           animation: marquee 40s linear infinite;
-        }
-        .text-outline {
-          -webkit-text-stroke: 1px rgba(255, 255, 255, 0.15);
-          color: transparent;
         }
       `}</style>
     </div>
